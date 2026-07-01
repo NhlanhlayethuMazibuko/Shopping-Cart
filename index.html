@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h2>Shop</h2>
+            <p>Add items to your cart</p>
+        </div>
+        <div class="product-grid" id="productGrid"></div>
+    </div>
+
+    <div class="cart-bar">
+        <span id="cartSummary">Cart: 0 items | R0.00</span>
+        <button id="viewCartBtn">View Cart</button>
+    </div>
+
+    <!-- Dropdown cart -->
+    <div class="cart-dropdown" id="cartDropdown">
+        <h4>Your Cart</h4>
+        <ul id="dropdownItems"></ul>
+        <p><strong>Total: R<span id="dropdownTotal">0.00</span></strong></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
